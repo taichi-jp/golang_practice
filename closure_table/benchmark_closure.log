@@ -1,0 +1,24 @@
+goos: darwin
+goarch: amd64
+BenchmarkAnscestorIs-8     	30000000	        49.5 ns/op
+BenchmarkAnscestorIs-8     	30000000	        48.5 ns/op
+BenchmarkAnscestorIs-8     	30000000	        48.9 ns/op
+BenchmarkAnscestorIs-8     	30000000	        49.2 ns/op
+BenchmarkAnscestorIs-8     	30000000	        49.0 ns/op
+BenchmarkAnscestorIs-8     	30000000	        49.4 ns/op
+BenchmarkAnscestorIs-8     	30000000	        48.9 ns/op
+BenchmarkAnscestorIs-8     	30000000	        48.6 ns/op
+BenchmarkAnscestorIs-8     	30000000	        48.8 ns/op
+BenchmarkAnscestorIs-8     	30000000	        48.8 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       764 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       767 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       763 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       768 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       769 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       759 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       770 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       760 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       779 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       770 ns/op
+PASS
+ok  	_/Users/taichi/flatt_kadai/closure_table	38.298s

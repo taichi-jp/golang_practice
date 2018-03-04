@@ -1,0 +1,24 @@
+goos: darwin
+goarch: amd64
+BenchmarkAnscestorIs-8     	 2000000	       809 ns/op
+BenchmarkAnscestorIs-8     	 2000000	       815 ns/op
+BenchmarkAnscestorIs-8     	 2000000	       820 ns/op
+BenchmarkAnscestorIs-8     	 2000000	       807 ns/op
+BenchmarkAnscestorIs-8     	 2000000	       812 ns/op
+BenchmarkAnscestorIs-8     	 2000000	       813 ns/op
+BenchmarkAnscestorIs-8     	 2000000	       809 ns/op
+BenchmarkAnscestorIs-8     	 2000000	       809 ns/op
+BenchmarkAnscestorIs-8     	 2000000	       808 ns/op
+BenchmarkAnscestorIs-8     	 2000000	       808 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       839 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       837 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       835 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       835 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       844 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       868 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       876 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       863 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       844 ns/op
+BenchmarkDescendantsOf-8   	 2000000	       839 ns/op
+PASS
+ok  	_/Users/taichi/flatt_kadai/array_of_anscestors	49.978s
