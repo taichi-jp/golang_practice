@@ -29,9 +29,10 @@ func TestAnscestorIs(t *testing.T) {
 func BenchmarkAnscestorIs(b *testing.B) {
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
-		for _, test := range anscestorTests {
-			test.descendant.AnscestorIs(test.anscestor, paths)
-		}
+		// for _, test := range anscestorTests {
+		// 	test.descendant.AnscestorIs(test.anscestor, paths)
+		// }
+		categories[5].AnscestorIs(categories[0], paths)
 	}
 }
 
@@ -58,8 +59,9 @@ func TestDescendantsOf(t *testing.T) {
 func BenchmarkDescendantsOf(b *testing.B) {
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
-		for _, test := range descendantsTests {
-			DescendantsOf(test.target, categories, paths)
-		}
+		// for _, test := range descendantsTests {
+		// 	DescendantsOf(test.target, categories, paths)
+		// }
+		DescendantsOf(&categories[0], categories, paths)
 	}
 }

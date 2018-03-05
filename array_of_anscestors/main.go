@@ -48,10 +48,12 @@ func (category Category) Ancestors(data []Category) []Category { // O(n^2)
 }
 
 // AnscestorIs 指定されたカテゴリが先祖カテゴリかどうかを判定するメソッド
-func (category *Category) AnscestorIs(target Category, data []Category) bool { // O(n^3)
-	parents := category.Ancestors(data) // O(n^2)
-	for _, ancestor := range parents {  // O(n)
-		if ancestor.ID == target.ID {
+func (category *Category) AnscestorIs(target Category, data []Category) bool { // O(log(n))
+	if category.ID == target.ID {
+		return true
+	}
+	for _, anscestorId := range category.AnscestorIds { // O(log(n))
+		if anscestorId == target.ID {
 			return true
 		}
 	}
@@ -81,7 +83,7 @@ func contains(s []int, e int) bool { // O(n)
 	return false
 }
 
-func (category Category) Descendants(data []Category) []Category { // O(n^2) + append
+func (category Category) Descendants(data []Category) []Category { // O(n * log(n)) + append
 	descendants := []Category{category}
 	// Naive Tree の場合
 	// offSpring := category.Children(data)
@@ -94,7 +96,7 @@ func (category Category) Descendants(data []Category) []Category { // O(n^2) + a
 	// 	offSpring = nextOffSpring
 	// }
 	for _, datum := range data { // O(n)
-		if contains(datum.AnscestorIds, category.ID) { // O(n)
+		if contains(datum.AnscestorIds, category.ID) { // O(log(n))
 			descendants = append(descendants, datum) // appendの計算量？
 		}
 	}

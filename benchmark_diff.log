@@ -1,3 +1,3 @@
 name             old time/op  new time/op  delta
-AnscestorIs-8     811ns ± 1%    49ns ± 1%  -93.96%  (p=0.000 n=10+10)
-DescendantsOf-8   848ns ± 3%   767ns ± 2%   -9.56%  (p=0.000 n=10+10)
+AnscestorIs-8    5.20ns ±11%  6.49ns ±10%  +24.80%  (p=0.000 n=100+98)
+DescendantsOf-8   338ns ± 8%   317ns ±17%   -6.23%  (p=0.000 n=98+100)
